@@ -1,13 +1,15 @@
 <template>
+    <div>
 
-    <ul class="link__btn-wrapper">
-        <li class="link__btn"
-            v-for="link in links" 
-            :key="link.id">
-                <a :href="link.url">{{link.name}}</a>
-        </li>
-    </ul>
-  
+        <ul class="link__btn-wrapper">
+            <li class="link__btn"
+                v-for="link in links" 
+                :key="link.id">
+                    <a :href="link.url">{{link.name}}</a>
+            </li>
+        </ul>
+        
+    </div>
 </template>
 
 <script>
@@ -23,8 +25,8 @@ export default class Link extends Vue {
 
 <style lang="scss">
 
-$color : salmon;
-$bg-color: #3D3B3C;
+$color : #F5EFDF;
+$bg-color: #34495e;
 
 .link__btn {
     display: flex;

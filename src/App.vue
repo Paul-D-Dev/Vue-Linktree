@@ -4,7 +4,7 @@
     <div class="img-wrapper">
       <img alt="DAO logo" src="./assets/logo_dao.png" />
     </div>
-    <Link />
+    <Link class="links"/>
     <SocialNetwork class="social"/>
   </main>
 </template>
@@ -31,15 +31,13 @@ export default class App extends Vue {}
 }
 
 body {
-  background-color: #3D3B3C
+  background-color: #34495e;
 }
 
 #app {
   font-family: Avenir, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
 }
 main {
   height: 100vh;
@@ -51,7 +49,10 @@ main {
   display: flex;
   flex-direction: column;
 
-
+  .links {
+    margin-top: 50px;
+  }
+  
   .social {
     margin-top: auto;
     margin-bottom: 60px;
