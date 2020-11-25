@@ -1,15 +1,17 @@
 <template>
-  <img alt="Vue logo" src="./assets/logo.png">
-  <HelloWorld msg="Welcome to Your Vue.js + TypeScript App"/>
+  <img alt="DAO logo" src="./assets/logo_dao.png">
+  <SocialNetwork/>
 </template>
 
 <script lang="ts">
 import { Options, Vue } from 'vue-class-component';
 import HelloWorld from './components/HelloWorld.vue';
+import SocialNetwork from './components/SocialNetwork.vue';
 
 @Options({
   components: {
     HelloWorld,
+    SocialNetwork
   },
 })
 export default class App extends Vue {}
